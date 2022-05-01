@@ -54,8 +54,8 @@ const router = express.Router();
  *         required: true
  *         schema:
  *           type: string
- *         description: Text you want to encrypt
- *     summary: Returns hash encrypted with sha256
+ *         description: Text you want to encrypt using sha256
+ *     summary: Returns hash encrypted by sha256
  *     responses:
  *       200:
  *         description: encrypted string
@@ -76,8 +76,8 @@ router.get('/api/sha256/:text', (req, res) => {
  *         required: true
  *         schema:
  *           type: string
- *         description: Text you want to encrypt
- *     summary: Returns hash encrypted with streebog
+ *         description: Text you want to encrypt using streebog
+ *     summary: Returns hash encrypted by streebog
  *     responses:
  *       200:
  *         description: encrypted string

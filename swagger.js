@@ -16,6 +16,6 @@ const options = {
     },
 };
 
-const specs = swaggerJSDoc(options);
+const docs = swaggerJSDoc(options);
 
-export default specs;
+export default docs;
